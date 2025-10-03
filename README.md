@@ -1,38 +1,55 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
+# 🚗 Sistema de Estacionamento em C#
+![.NET](https://img.shields.io/badge/.NET-8-blue)
+![C#](https://img.shields.io/badge/C%23-Fundamentos-brightgreen)
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+Este repositório é um **fork** do desafio da **DIO**, desenvolvido para praticar conceitos fundamentais de **C#** e programação orientada a objetos.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+## ✨ Funcionalidades implementadas
+- ✅ Adicionar veículo: permite cadastrar uma placa no estacionamento.
+- ✅ Remover veículo: calcula o valor total a pagar com base no preço inicial e preço por hora, removendo o veículo da lista.
+- ✅ Listar veículos: exibe todos os veículos cadastrados no estacionamento.
+- ✅ Menu interativo: opções para gerenciar veículos e encerrar o programa.
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
+## 📌 Estrutura do projeto
+- **Estacionamento.cs**: contém as variáveis `precoInicial`, `precoPorHora` e a lista de veículos, além dos métodos `AdicionarVeiculo`, `RemoverVeiculo` e `ListarVeiculos`.
+- **Program.cs**: arquivo principal com o menu interativo que permite executar as operações.
+
 ![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
 
-A classe contém três variáveis, sendo:
-
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
-
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
-
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
-
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+## 🚀 Como rodar
 
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/andreza1freitas/trilha-net-fundamentos-desafio.git
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd trilha-net-fundamentos-desafio
+
+3. Restaure os pacotes NuGet necessários:
+
+   ```bash
+   dotnet restore DesafioFundamentos.csproj
+
+4. Compile o projeto:
+
+   ```bash
+   dotnet build DesafioFundamentos.csproj
+
+5. Execute o projeto:
+
+   ```bash
+   dotnet run --project DesafioFundamentos.csproj
+<br> 
+
+## 💡 Observações
+
+- Projeto criado como aplicação console em **.NET 8**; recomenda-se ter a versão mais recente do SDK instalada.
+- Exercício prático para reforçar conceitos de listas, condicionais, laços de repetição e entrada/saída no console.
+
+## 📜 Licença
+
+Projeto desenvolvido para fins de estudo e prática educacional, sem fins comerciais.
